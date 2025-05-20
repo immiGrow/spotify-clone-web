@@ -1,0 +1,49 @@
+
+#song-volume {
+  -webkit-appearance: none;
+  width: 100px;       /* Short width */
+  height: 4px;        /* Thin track height */
+  background: transparent;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Webkit (Chrome, Safari) Track */
+#song-volume::-webkit-slider-runnable-track {
+  background: white;
+  height: 4px;
+ border-radius: 6px;
+}
+
+/* Webkit Thumb (Circle) */
+#song-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  background: white;
+ border-radius: 6px;
+  margin-top: -3px; /* Align with track */
+  cursor: pointer;
+}
+
+/* Firefox Track */
+#song-volume::-moz-range-track {
+  background: white;
+  height: 4px;
+ border-radius: 6px;
+}
+
+/* Firefox Thumb */
+#song-volume::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Optional: Hide default focus outline */
+#song-volume:focus {
+  outline: none;
+}
